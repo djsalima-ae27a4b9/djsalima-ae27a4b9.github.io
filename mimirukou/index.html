@@ -1,0 +1,1861 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>秘密入口-隐藏空间_私密探索_入口对比</title>
+  <meta name="description" content="秘密入口是专注于隐藏空间与私密探索的内容门户，提供隐秘地点、私密体验和入口类内容的分类推荐、深度解析与用户经验分享，适合喜欢探索小众空间与私密场景的读者。">
+  <meta name="keywords" content="隐藏空间,私密探索,隐秘地点,入口推荐,小众体验">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1f2a'/%3E%3Cpath d='M22 44V24h8c5 0 9 3 9 8s-4 8-9 8h-4v4z' fill='%23e8b04b'/%3E%3Ccircle cx='44' cy='22' r='5' fill='%23f2d59b'/%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    /* ========== 全局变量 ========== */
+    :root {
+      --ink: #1b1f2a;
+      --ink-soft: #3f4654;
+      --muted: #6b7280;
+      --paper: #f6f4ef;
+      --panel: #ffffff;
+      --panel-warm: #fbf8f1;
+      --line: #e3ddd1;
+      --line-strong: #d2cab8;
+      --gold: #b8862b;
+      --gold-soft: #e8b04b;
+      --gold-pale: #f5e7c8;
+      --teal: #2f6f6b;
+      --teal-soft: #dcebe8;
+      --danger: #9c4a3a;
+      --radius-s: 6px;
+      --radius-m: 10px;
+      --radius-l: 16px;
+      --shadow-s: 0 1px 2px rgba(27, 31, 42, 0.06);
+      --shadow-m: 0 4px 14px rgba(27, 31, 42, 0.08);
+      --shadow-l: 0 10px 30px rgba(27, 31, 42, 0.10);
+      --font: 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+      --sticky-offset: 104px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--sticky-offset);
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img, svg { display: block; max-width: 100%; }
+    button { font-family: inherit; }
+    ul, ol { margin: 0; padding: 0; list-style: none; }
+
+    :focus-visible {
+      outline: 2px solid var(--teal);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    /* ========== 吸顶公告条 + 页头 ========== */
+    .sticky-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .notice-bar {
+      background: var(--ink);
+      color: #f5e7c8;
+      font-size: 13px;
+      padding: 7px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .notice-bar strong { color: var(--gold-soft); font-weight: 600; }
+    .notice-bar .dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--gold-soft);
+      flex: 0 0 auto;
+    }
+
+    .site-header {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+      box-shadow: var(--shadow-s);
+    }
+
+    .header-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 0 0 auto;
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-s);
+    }
+    .brand-mark svg { width: 24px; height: 24px; }
+
+    .brand-text {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex: 1 1 auto;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .header-nav a {
+      font-size: 14px;
+      color: var(--ink-soft);
+      padding: 6px 12px;
+      border-radius: 999px;
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+    .header-nav a:hover {
+      background: var(--gold-pale);
+      color: var(--ink);
+    }
+
+    .header-cta {
+      flex: 0 0 auto;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: var(--ink);
+      color: #fff;
+      border: 1px solid var(--ink);
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .header-cta:hover { background: var(--teal); border-color: var(--teal); }
+
+    /* ========== 首屏 ========== */
+    .hero {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 44px 24px 36px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: var(--gold);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      width: 26px; height: 1px;
+      background: var(--gold);
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 4.6vw, 46px);
+      margin: 0 0 16px;
+      letter-spacing: 2px;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    .hero-desc {
+      font-size: 15.5px;
+      color: var(--ink-soft);
+      max-width: 560px;
+      margin: 0 0 26px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--ink);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 11px 24px;
+      border-radius: var(--radius-m);
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: var(--teal); }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--ink-soft);
+      font-size: 14px;
+      padding: 11px 20px;
+      border-radius: var(--radius-m);
+      border: 1px solid var(--line-strong);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--ink); }
+
+    .hero-visual {
+      position: relative;
+      background: var(--panel-warm);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-l);
+      padding: 28px 26px;
+      box-shadow: var(--shadow-m);
+      overflow: hidden;
+    }
+    .hero-visual::after {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(232,176,75,0.25), transparent 70%);
+      pointer-events: none;
+    }
+    .visual-title {
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: var(--muted);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .visual-title span:last-child {
+      color: var(--gold);
+      font-weight: 600;
+    }
+    .visual-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+    .visual-item:last-child { border-bottom: none; }
+    .visual-idx {
+      width: 26px; height: 26px;
+      border-radius: 8px;
+      background: var(--ink);
+      color: var(--gold-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex: 0 0 auto;
+    }
+    .visual-item:nth-child(3) .visual-idx { background: var(--teal); color: #fff; }
+    .visual-body { flex: 1; min-width: 0; }
+    .visual-name {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .visual-meta {
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+    .visual-badge {
+      font-size: 10.5px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--gold-pale);
+      color: #7a5a16;
+      font-weight: 600;
+      flex: 0 0 auto;
+    }
+
+    /* ========== 三栏主布局 ========== */
+    .main-wrap {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+      display: grid;
+      grid-template-columns: 176px minmax(0, 1fr) 244px;
+      gap: 32px;
+      align-items: start;
+    }
+
+    /* --- 左栏 --- */
+    .col-left {
+      position: sticky;
+      top: var(--sticky-offset);
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .side-block {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-m);
+      padding: 16px 14px;
+      box-shadow: var(--shadow-s);
+    }
+    .side-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      margin: 0 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .channel-list li { margin-bottom: 2px; }
+    .channel-list a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      padding: 7px 8px;
+      border-radius: var(--radius-s);
+      transition: background 0.12s, color 0.12s;
+    }
+    .channel-list a:hover,
+    .channel-list a.is-active {
+      background: var(--gold-pale);
+      color: var(--ink);
+      font-weight: 600;
+    }
+    .channel-list .ch-dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex: 0 0 auto;
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .tag-cloud a,
+    .tag-cloud span {
+      font-size: 11.5px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--panel-warm);
+      border: 1px solid var(--line);
+      color: var(--ink-soft);
+      transition: border-color 0.12s, background 0.12s;
+      cursor: pointer;
+    }
+    .tag-cloud a:hover {
+      border-color: var(--gold);
+      background: var(--gold-pale);
+      color: var(--ink);
+    }
+
+    /* --- 中栏 --- */
+    .col-center {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+    }
+
+    .sec {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-l);
+      padding: 26px 28px;
+      box-shadow: var(--shadow-s);
+      scroll-margin-top: var(--sticky-offset);
+    }
+    .sec-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .sec-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 0.5px;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sec-title::before {
+      content: '';
+      width: 4px; height: 20px;
+      border-radius: 2px;
+      background: linear-gradient(180deg, var(--gold-soft), var(--gold));
+      flex: 0 0 auto;
+    }
+    .sec-sub {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+    }
+    .sec-link {
+      font-size: 12.5px;
+      color: var(--teal);
+      font-weight: 600;
+      border-bottom: 1px solid transparent;
+      white-space: nowrap;
+    }
+    .sec-link:hover { border-bottom-color: var(--teal); }
+
+    /* 简介 */
+    .intro-text p {
+      font-size: 14.5px;
+      color: var(--ink-soft);
+      margin: 0 0 14px;
+      line-height: 1.8;
+    }
+    .intro-text p:last-child { margin-bottom: 0; }
+    .intro-text strong { color: var(--ink); font-weight: 600; }
+
+    /* 热门卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .content-card {
+      background: var(--panel-warm);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-m);
+      padding: 16px 16px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: box-shadow 0.15s, border-color 0.15s, transform 0.15s;
+    }
+    .content-card:hover {
+      border-color: var(--gold-soft);
+      box-shadow: var(--shadow-m);
+      transform: translateY(-1px);
+    }
+    .card-type {
+      display: inline-flex;
+      align-self: flex-start;
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: var(--teal);
+      background: var(--teal-soft);
+      padding: 2px 9px;
+      border-radius: 999px;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 0;
+      line-height: 1.4;
+    }
+    .card-desc {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.6;
+      flex: 1;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 2px;
+    }
+    .card-tags span {
+      font-size: 10.5px;
+      padding: 1px 7px;
+      border-radius: 4px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      color: var(--ink-soft);
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: var(--muted);
+      border-top: 1px dashed var(--line);
+      padding-top: 8px;
+      margin-top: 4px;
+    }
+    .card-meta .hot { color: var(--danger); font-weight: 600; }
+
+    /* 最新更新紧凑列表 */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+    }
+    .update-item {
+      display: flex;
+      gap: 14px;
+      padding: 11px 0;
+      border-bottom: 1px dashed var(--line);
+      align-items: flex-start;
+    }
+    .update-item:last-child { border-bottom: none; }
+    .update-date {
+      font-size: 12px;
+      color: var(--muted);
+      flex: 0 0 52px;
+      font-variant-numeric: tabular-nums;
+      padding-top: 2px;
+    }
+    .update-body { flex: 1; min-width: 0; }
+    .update-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+    .update-summary {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+    .update-tag {
+      font-size: 10.5px;
+      color: var(--gold);
+      background: var(--gold-pale);
+      padding: 1px 8px;
+      border-radius: 4px;
+      margin-left: 8px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    /* 分类入口 */
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .cat-item {
+      background: var(--panel-warm);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-m);
+      padding: 14px 12px;
+      text-align: center;
+      transition: border-color 0.15s, background 0.15s;
+      cursor: pointer;
+    }
+    .cat-item:hover {
+      border-color: var(--gold);
+      background: var(--gold-pale);
+    }
+    .cat-icon {
+      font-size: 18px;
+      margin-bottom: 6px;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .cat-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .cat-count {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    /* 深度正文 */
+    .deep-body h3 {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 22px 0 10px;
+      padding-left: 12px;
+      border-left: 3px solid var(--gold-soft);
+    }
+    .deep-body h3:first-child { margin-top: 0; }
+    .deep-body p {
+      font-size: 14px;
+      color: var(--ink-soft);
+      line-height: 1.85;
+      margin: 0 0 12px;
+    }
+    .deep-body ul {
+      margin: 0 0 14px;
+      padding-left: 4px;
+    }
+    .deep-body li {
+      font-size: 13.8px;
+      color: var(--ink-soft);
+      line-height: 1.8;
+      padding: 3px 0 3px 18px;
+      position: relative;
+    }
+    .deep-body li::before {
+      content: '›';
+      position: absolute;
+      left: 2px;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .deep-body .kw {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* 体验指南步骤 */
+    .guide-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .guide-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .step-num {
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--gold-soft);
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      margin-top: 1px;
+    }
+    .step-body h4 {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0 0 3px;
+      color: var(--ink);
+    }
+    .step-body p {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.65;
+    }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 8px; }
+    .faq-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-m);
+      overflow: hidden;
+      background: var(--panel-warm);
+    }
+    .faq-item summary {
+      cursor: pointer;
+      padding: 13px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      transition: background 0.12s;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+';
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--gold);
+      transition: transform 0.2s;
+      flex: 0 0 auto;
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item summary:hover { background: var(--gold-pale); }
+    .faq-answer {
+      padding: 0 16px 15px;
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      line-height: 1.8;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      margin: 0 0 0;
+    }
+
+    /* 评论 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .comment-card {
+      background: var(--panel-warm);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-m);
+      padding: 12px 14px;
+    }
+    .comment-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .comment-user {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .avatar {
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      background: var(--gold-pale);
+      color: #7a5a16;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      flex: 0 0 auto;
+    }
+    .comment-name {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .comment-time {
+      font-size: 10.5px;
+      color: var(--muted);
+    }
+    .comment-text {
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    /* 资讯 */
+    .news-list { display: flex; flex-direction: column; gap: 0; }
+    .news-item {
+      display: flex;
+      gap: 16px;
+      padding: 13px 0;
+      border-bottom: 1px dashed var(--line);
+      align-items: flex-start;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-date {
+      font-size: 12px;
+      color: var(--muted);
+      flex: 0 0 74px;
+      font-variant-numeric: tabular-nums;
+      padding-top: 2px;
+    }
+    .news-body { flex: 1; min-width: 0; }
+    .news-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0 0 3px;
+    }
+    .news-summary {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* 相关推荐标签 */
+    .rec-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .rec-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: var(--panel-warm);
+      border: 1px solid var(--line);
+      color: var(--ink-soft);
+      transition: border-color 0.15s, background 0.15s, color 0.15s;
+      cursor: pointer;
+    }
+    .rec-tag:hover {
+      border-color: var(--gold);
+      background: var(--gold-pale);
+      color: var(--ink);
+    }
+    .rec-tag .rec-arrow {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* 精选 / 时间线 */
+    .timeline {
+      position: relative;
+      padding-left: 20px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 5px; top: 4px; bottom: 4px;
+      width: 2px;
+      background: var(--line);
+    }
+    .timeline-item {
+      position: relative;
+      padding: 0 0 18px 16px;
+    }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -19px;
+      top: 5px;
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--gold-soft);
+      border: 2px solid var(--panel);
+      box-shadow: 0 0 0 2px var(--gold-pale);
+    }
+    .timeline-date {
+      font-size: 11.5px;
+      color: var(--gold);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 3px;
+    }
+    .timeline-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 0 0 2px;
+    }
+    .timeline-desc {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* --- 右栏 --- */
+    .col-right {
+      position: sticky;
+      top: var(--sticky-offset);
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .toc-list li { margin-bottom: 2px; }
+    .toc-list a {
+      display: block;
+      font-size: 12.5px;
+      color: var(--ink-soft);
+      padding: 5px 8px;
+      border-radius: var(--radius-s);
+      border-left: 2px solid transparent;
+      transition: background 0.12s, border-color 0.12s;
+      line-height: 1.5;
+    }
+    .toc-list a:hover {
+      background: var(--panel-warm);
+      border-left-color: var(--gold);
+      color: var(--ink);
+    }
+
+    .hot-list li {
+      display: flex;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--line);
+      align-items: baseline;
+    }
+    .hot-list li:last-child { border-bottom: none; }
+    .hot-rank {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      flex: 0 0 18px;
+      font-variant-numeric: tabular-nums;
+    }
+    .hot-list li:nth-child(1) .hot-rank { color: var(--danger); }
+    .hot-list li:nth-child(2) .hot-rank { color: var(--gold); }
+    .hot-list li:nth-child(3) .hot-rank { color: var(--teal); }
+    .hot-name {
+      font-size: 12.5px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+      flex: 1;
+    }
+    .hot-name:hover { color: var(--teal); }
+
+    .extend-list li {
+      padding: 7px 0;
+      font-size: 12.5px;
+      color: var(--ink-soft);
+      border-bottom: 1px dashed var(--line);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .extend-list li:last-child { border-bottom: none; }
+    .extend-list .ext-dot {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--teal);
+      flex: 0 0 auto;
+    }
+
+    /* ========== 页尾 ========== */
+    .site-footer {
+      background: var(--ink);
+      color: #cfd3dc;
+      margin-top: 20px;
+    }
+    .footer-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 44px 24px 26px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 36px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba(255,255,255,0.10);
+    }
+    .footer-brand {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .footer-brand .f-mark {
+      width: 26px; height: 26px;
+      border-radius: 7px;
+      background: var(--gold-soft);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: var(--ink);
+      font-weight: 800;
+    }
+    .footer-desc {
+      font-size: 12.5px;
+      color: #9aa1ad;
+      line-height: 1.8;
+      max-width: 300px;
+    }
+    .footer-col h4 {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      color: var(--gold-soft);
+      margin: 0 0 12px;
+      font-weight: 600;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 12.5px;
+      color: #9aa1ad;
+      padding: 3px 0;
+      transition: color 0.12s;
+    }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 11.5px;
+      color: #7e8592;
+    }
+    .footer-bottom .demo-note {
+      color: #6b7280;
+    }
+
+    /* ========== 响应式 ========== */
+    @media (max-width: 1120px) {
+      .main-wrap {
+        grid-template-columns: 160px minmax(0, 1fr);
+      }
+      .col-right {
+        display: none;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 32px 20px 28px;
+      }
+      .hero-visual { max-width: 480px; }
+      .main-wrap {
+        grid-template-columns: 1fr;
+        padding: 0 16px 44px;
+        gap: 20px;
+      }
+      .col-left {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .col-right { display: none; }
+      .card-grid { grid-template-columns: 1fr 1fr; }
+      .cat-grid { grid-template-columns: repeat(2, 1fr); }
+      .comment-grid { grid-template-columns: 1fr; }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      .header-nav { display: none; }
+      .header-inner { justify-content: space-between; }
+      .sec { padding: 20px 18px; }
+    }
+
+    @media (max-width: 560px) {
+      .card-grid { grid-template-columns: 1fr; }
+      .col-left { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .cat-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero h1 { font-size: 26px; }
+      .notice-bar { font-size: 11.5px; padding: 6px 10px; }
+      .header-inner { padding: 10px 14px; }
+      .brand-text { font-size: 17px; }
+      .hero { padding: 24px 16px 20px; }
+      .sec { padding: 18px 14px; border-radius: var(--radius-m); }
+      .sec-title { font-size: 17px; }
+      .update-date { flex-basis: 46px; font-size: 11px; }
+      .news-date { flex-basis: 60px; font-size: 11px; }
+      .rec-tag { font-size: 12px; padding: 6px 12px; }
+      .main-wrap { padding: 0 10px 36px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; scroll-behavior: auto !important; }
+    }
+
+    /* 浏览器查找无结果提示 */
+    .no-result-tip {
+      display: none;
+      padding: 12px 16px;
+      background: var(--gold-pale);
+      border: 1px solid var(--gold-soft);
+      border-radius: var(--radius-m);
+      font-size: 13px;
+      color: #7a5a16;
+      margin-bottom: 14px;
+    }
+    .no-result-tip.is-visible { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== 吸顶公告条 + 页头 ===== -->
+  <div class="sticky-wrap">
+    <div class="notice-bar" role="status" aria-label="站点公告">
+      <span class="dot" aria-hidden="true"></span>
+      <span>本周新增 <strong>18 条</strong> 隐秘空间实测记录，私密探索指南已更新至第三期</span>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/#top" aria-label="秘密入口首页">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 17V7h4a4 4 0 0 1 0 8H8v2H7Z" fill="#e8b04b"/>
+              <circle cx="17" cy="8" r="2.6" fill="#f5e7c8"/>
+            </svg>
+          </span>
+          <span class="brand-text">秘密入口</span>
+        </a>
+
+        <nav class="header-nav" aria-label="主题频道导航">
+          <a href="/#intro">入口简介</a>
+          <a href="/#hot">热门推荐</a>
+          <a href="/#updates">最新动态</a>
+          <a href="/#cats">分类入口</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#comments">用户评论</a>
+        </nav>
+
+        <button class="header-cta" type="button" onclick="document.getElementById('hot').scrollIntoView({behavior:'smooth'})">
+          探索入口
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <!-- ===== 首屏 ===== -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <span class="hero-eyebrow">隐秘空间 · 私密探索</span>
+      <h1 id="hero-title">秘密入口</h1>
+      <p class="hero-desc">
+        收集城市与自然中不轻易被发现的隐秘空间、私密体验与小众入口，按类型、场景和体验方式整理，让你少走弯路，快速找到真正值得一去的地方。
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary" type="button" onclick="document.getElementById('hot').scrollIntoView({behavior:'smooth'})">
+          查看热门入口
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="btn-ghost" type="button" onclick="document.getElementById('deep').scrollIntoView({behavior:'smooth'})">
+          阅读深度解析
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-label="本周入口速览示意">
+      <div class="visual-title">
+        <span>本周入口速览</span>
+        <span>更新中</span>
+      </div>
+      <div class="visual-item">
+        <span class="visual-idx">01</span>
+        <div class="visual-body">
+          <div class="visual-name">旧书店后巷的旋转门</div>
+          <div class="visual-meta">城市隐藏 · 需预约 · 人均 40 分钟</div>
+        </div>
+        <span class="visual-badge">新</span>
+      </div>
+      <div class="visual-item">
+        <span class="visual-idx">02</span>
+        <div class="visual-body">
+          <div class="visual-name">山腰废弃泵站的侧梯</div>
+          <div class="visual-meta">自然秘境 · 徒步 1.2km · 建议结伴</div>
+        </div>
+        <span class="visual-badge">热</span>
+      </div>
+      <div class="visual-item">
+        <span class="visual-idx">03</span>
+        <div class="visual-body">
+          <div class="visual-name">地下唱片店的暗门通道</div>
+          <div class="visual-meta">私密体验 · 晚间开放 · 限流</div>
+        </div>
+        <span class="visual-badge">荐</span>
+      </div>
+      <div class="visual-item">
+        <span class="visual-idx">04</span>
+        <div class="visual-body">
+          <div class="visual-name">老码头仓库的阁楼入口</div>
+          <div class="visual-meta">小众空间 · 需口令 · 适合安静停留</div>
+        </div>
+        <span class="visual-badge">新</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 三栏主内容区 ===== -->
+  <div class="main-wrap">
+
+    <!-- ---------- 左栏 ---------- -->
+    <aside class="col-left" aria-label="频道与筛选">
+      <div class="side-block">
+        <h2 class="side-title">频道导航</h2>
+        <ul class="channel-list">
+          <li><a href="/#intro" class="is-active"><span class="ch-dot"></span>入口简介</a></li>
+          <li><a href="/#hot"><span class="ch-dot"></span>热门推荐</a></li>
+          <li><a href="/#updates"><span class="ch-dot"></span>最新动态</a></li>
+          <li><a href="/#cats"><span class="ch-dot"></span>分类入口</a></li>
+          <li><a href="/#deep"><span class="ch-dot"></span>深度解析</a></li>
+          <li><a href="/#guide"><span class="ch-dot"></span>体验指南</a></li>
+          <li><a href="/#faq"><span class="ch-dot"></span>常见问答</a></li>
+          <li><a href="/#comments"><span class="ch-dot"></span>用户评论</a></li>
+          <li><a href="/#news"><span class="ch-dot"></span>相关资讯</a></li>
+          <li><a href="/#rec"><span class="ch-dot"></span>相关推荐</a></li>
+          <li><a href="/#timeline"><span class="ch-dot"></span>探索时间线</a></li>
+        </ul>
+      </div>
+
+      <div class="side-block">
+        <h2 class="side-title">场景标签</h2>
+        <div class="tag-cloud">
+          <a href="/#hot">周末独行</a>
+          <a href="/#hot">深夜可去</a>
+          <a href="/#hot">雨天室内</a>
+          <a href="/#hot">结伴探索</a>
+          <a href="/#hot">安静久坐</a>
+          <a href="/#hot">摄影友好</a>
+          <a href="/#hot">低预算</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ---------- 中栏 ---------- -->
+    <main class="col-center">
+
+      <!-- 1. 内容简介 -->
+      <section class="sec" id="intro" aria-labelledby="intro-title">
+        <div class="sec-head">
+          <h2 class="sec-title" id="intro-title">入口简介：什么样的地方值得被称作秘密入口</h2>
+        </div>
+        <div class="intro-text">
+          <p>
+            <strong>秘密入口</strong>在这里指那些不临主街、没有明显招牌、需要一点线索才能找到的隐秘空间与私密体验场所。它们可能是旧楼里的一扇暗门，也可能是山道尽头一段被树遮住的侧梯。我们关注的是“发现过程”本身——怎么找、怎么进、进去之后适合做什么。
+          </p>
+          <p>
+            与常规的探店推荐不同，秘密入口更强调<strong>隐藏空间</strong>的进入门槛与体验节奏。有的入口需要提前预约，有的只在特定时段开放，还有的依赖熟人带路。这些限制反而构成了私密探索的乐趣：你不是在消费一个标准化的景点，而是在完成一次有准备的<strong>私密探索</strong>。
+          </p>
+          <p>
+            页面覆盖城市隐藏空间、自然秘境、地下文化场所和小众体验点四类方向，每个条目都标注了进入方式、适合时段和注意事项。对于正在犹豫选哪类入口的读者，我们也在 FAQ 与相关推荐中整理了<strong>入口对比</strong>的参考维度，比如安静程度、步行距离和是否需要预约。
+          </p>
+          <p>
+            如果你喜欢在陌生街区多拐一个弯，或者习惯在出发前把路线和规则查清楚，这里的内容会比较对路。我们把信息密度放在前面，把情绪渲染放在后面，方便你快速判断一个隐秘地点是否值得专程前往。
+          </p>
+        </div>
+      </section>
+
+      <!-- 2. 热门内容推荐 -->
+      <section class="sec" id="hot" aria-labelledby="hot-title">
+        <div class="sec-head">
+          <h2 class="sec-title" id="hot-title">热门内容推荐 · 近期被反复查看的入口</h2>
+          <a class="sec-link" href="/#updates">查看更新节奏</a>
+        </div>
+        <div class="card-grid">
+          <article class="content-card">
+            <span class="card-type">城市隐藏</span>
+            <h3 class="card-title">旧书店后巷的旋转门</h3>
+            <p class="card-desc">从主街拐进后巷约 30 米，旋转门藏在消防梯下方，内里是一间只放黑胶的小厅，适合一个人待一下午。</p>
+            <div class="card-tags"><span>隐藏空间</span><span>需预约</span><span>安静久坐</span></div>
+            <div class="card-meta"><span>热度 9.2</span><span class="hot">本周 +320</span></div>
+          </article>
+
+          <article class="content-card">
+            <span class="card-type">自然秘境</span>
+            <h3 class="card-title">山腰废弃泵站的侧梯</h3>
+            <p class="card-desc">沿旧水管走 1.2 公里，侧梯通向一处混凝土平台，视野开阔但无护栏，建议结伴并在日落前返回。</p>
+            <div class="card-tags"><span>入口对比</span><span>徒步</span><span>摄影友好</span></div>
+            <div class="card-meta"><span>热度 8.8</span><span class="hot">收藏 1.4k</span></div>
+          </article>
+
+          <article class="content-card">
+            <span class="card-type">私密体验</span>
+            <h3 class="card-title">地下唱片店的暗门通道</h3>
+            <p class="card-desc">唱片店最里侧试听间的书架可以推开，通道后是小型演出空间，每周只开放三个晚上，限流 20 人。</p>
+            <div class="card-tags"><span>私密探索</span><span>夜间开放</span><span>限流</span></div>
+            <div class="card-meta"><span>热度 8.5</span><span class="hot">本周 +210</span></div>
+          </article>
+
+          <article class="content-card">
+            <span class="card-type">小众空间</span>
+            <h3 class="card-title">老码头仓库的阁楼入口</h3>
+            <p class="card-desc">入口在货梯旁的窄梯上三楼，阁楼保留旧木梁结构，适合安静阅读或写东西，需向管理员报口令。</p>
+            <div class="card-tags"><span>隐秘地点</span><span>口令进入</span><span>低预算</span></div>
+            <div class="card-meta"><span>热度 8.1</span><span class="hot">收藏 980</span></div>
+          </article>
+
+          <article class="content-card">
+            <span class="card-type">城市隐藏</span>
+            <h3 class="card-title">居民楼天台的公共花房</h3>
+            <p class="card-desc">从单元门左侧的维修通道上到七层，花房由住户自发打理，进入前需要在门口登记，适合雨天室内停留。</p>
+            <div class="card-tags"><span>雨天室内</span><span>社区空间</span><span>免费</span></div>
+            <div class="card-meta"><span>热度 7.9</span><span class="hot">本周 +160</span></div>
+          </article>
+
+          <article class="content-card">
+            <span class="card-type">自然秘境</span>
+            <h3 class="card-title">河堤旧闸口的检修台阶</h3>
+            <p class="card-desc">闸口右侧有一组下行台阶，通往河边碎石滩，入口不起眼但路况稳定，适合傍晚短时间停留。</p>
+            <div class="card-tags"><span>隐秘地点</span><span>傍晚可去</span><span>短时停留</span></div>
+            <div class="card-meta"><span>热度 7.6</span><span class="hot">收藏 720</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="sec" id="updates" aria-labelledby="updates-title">
+        <div class="sec-head">
+          <h2 class="sec-title" id="updates-title">最新更新 · 新收录与内容修订</h2>
+          <span class="sec-sub">按时间倒序</span>
+        </div>
+        <ul class="update-list">
+          <li class="update-item">
+            <span class="update-date">11-28</span>
+            <div class="update-body">
+              <div class="update-name">旧书店后巷的旋转门 <span class="update-tag">规则更新</span></div>
+              <p class="update-summary">预约方式改为提前一天在小程序登记，现场不再接受临时排队。</p>
+            </div>
+          </li>
+          <li class="update-item">
+            <span class="update-date">11-27</span>
+            <div class="update-body">
+              <div class="update-name">山腰废弃泵站的侧梯 <span class="update-tag">新收录</span></div>
+              <p class="update-summary">补充了从停车场到侧梯的步行路线图，标注了无信号路段。</p>
+            </div>
+          </li>
+          <li class="update-item">
+            <span class="update-date">11-26</span>
+            <div class="update-body">
+              <div class="update-name">地下唱片店的暗门通道 <span class="update-tag">时间调整</span></div>
+              <p class="update-summary">本周演出改为周四至周六，入场仍维持 20 人上限。</p>
+            </div>
+          </li>
+          <li class="update-item">
+            <span class="update-date">11-25</span>
+            <div class="update-body">
+              <div class="update-name">老码头仓库的阁楼入口 <span class="update-tag">体验反馈</span></div>
+              <p class="update-summary">多位读者反馈下午光线更好，建议 14:00 后再进入。</p>
+            </div>
+          </li>
+          <li class="update-item">
+            <span class="update-date">11-24</span>
+            <div class="update-body">
+              <div class="update-name">居民楼天台的公共花房 <span class="update-tag">新收录</span></div>
+              <p class="update-summary">补充了登记流程和花房开放时段，周末上午人较少。</p>
+            </div>
+          </li>
+          <li class="update-item">
+            <span class="update-date">11-22</span>
+            <div class="update-body">
+              <div class="update-name">河堤旧闸口的检修台阶 <span class="update-tag">路线修订</span></div>
+              <p class="update-summary">雨季部分台阶湿滑，已在路线中标注替代上行路径。</p>
+            </div>
+          </li>
+          <li class="update-item">
+            <span class="update-date">11-20</span>
+            <div class="update-body">
+              <div class="update-name">旧厂房顶层的观望窗口 <span class="update-tag">新收录</span></div>
+              <p class="update-summary">入口位于货梯后方，需与物业确认当日是否开放。</p>
+            </div>
+          </li>
+          <li class="update-item">
+            <span class="update-date">11-18</span>
+            <div class="update-body">
+              <div class="update-name">小巷尽头的共享书桌 <span class="update-tag">体验反馈</span></div>
+              <p class="update-summary">工作日下午较安静，适合需要长时间专注的读者。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="sec" id="cats" aria-labelledby="cats-title">
+        <div class="sec-head">
+          <h2 class="sec-title" id="cats-title">分类入口 · 按空间类型快速筛选</h2>
+          <span class="sec-sub">8 个方向</span>
+        </div>
+        <div class="cat-grid">
+          <div class="cat-item" role="link" tabindex="0" onclick="document.getElementById('hot').scrollIntoView({behavior:'smooth'})">
+            <div class="cat-icon">01</div>
+            <div class="cat-name">城市隐藏空间</div>
+            <div class="cat-count">26 条示例</div>
+          </div>
+          <div class="cat-item" role="link" tabindex="0" onclick="document.getElementById('hot').scrollIntoView({behavior:'smooth'})">
+            <div class="cat-icon">02</div>
+            <div class="cat-name">自然秘境入口</div>
+            <div class="cat-count">18 条示例</div>
+          </div>
+          <div class="cat-item" role="link" tabindex="0" onclick="document.getElementById('hot').scrollIntoView({behavior:'smooth'})">
+            <div class="cat-icon">03</div>
+            <div class="cat-name">地下文化场所</div>
+            <div class="cat-count">14 条示例</div>
+          </div>
+          <div class="cat-item" role="link" tabindex="0" onclick="document.getElementById('hot').scrollIntoView({behavior:'smooth'})">
+            <div class="cat-icon">04</div>
+            <div class="cat-name">私密体验小店</div>
+            <div class="cat-count">21 条示例</div>
+          </div>
+          <div class="cat-item" role="link" tabindex="0" onclick="document.getElementById('hot').scrollIntoView({behavior:'smooth'})">
+            <div class="cat-icon">05</div>
+            <div class="cat-name">需要口令的入口</div>
+            <div class="cat-count">7 条示例</div>
+          </div>
+          <div class="cat-item" role="link" tabindex="0" onclick="document.getElementById('hot').scrollIntoView({behavior:'smooth'})">
+            <div class="cat-icon">06</div>
+            <div class="cat-name">雨天可去的隐秘地点</div>
+            <div class="cat-count">11 条示例</div>
+          </div>
+          <div class="cat-item" role="link" tabindex="0" onclick="document.getElementById('hot').scrollIntoView({behavior:'smooth'})">
+            <div class="cat-icon">07</div>
+            <div class="cat-name">适合独行的入口</div>
+            <div class="cat-count">19 条示例</div>
+          </div>
+          <div class="cat-item" role="link" tabindex="0" onclick="document.getElementById('hot').scrollIntoView({behavior:'smooth'})">
+            <div class="cat-icon">08</div>
+            <div class="cat-name">免费小众空间</div>
+            <div class="cat-count">9 条示例</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析正文 -->
+      <section class="sec" id="deep" aria-labelledby="deep-title">
+        <div class="sec-head">
+          <h2 class="sec-title" id="deep-title">深度解析：秘密入口的发现逻辑与判断标准</h2>
+        </div>
+        <div class="deep-body">
+          <h3>为什么有些入口值得专程前往</h3>
+          <p>
+            一个<strong class="kw">秘密入口</strong>的价值，往往不在于里面有多华丽，而在于它提供了一种与日常动线不同的空间体验。主街上的店铺默认你会经过，而隐藏在天台、后巷或检修通道后的空间，需要你主动寻找。这种“主动发现”的过程会放大停留时的感受，也让私密探索更有记忆点。
+          </p>
+          <p>
+            判断一个入口是否值得专程前往，可以看三个维度：进入成本、空间稳定性和停留质量。进入成本不只是距离，还包括是否需要预约、是否依赖熟人带路；空间稳定性指入口是否长期开放、规则是否清晰；停留质量则取决于里面的光线、声音和座位条件。
+          </p>
+
+          <h3>入口类型对照：城市隐藏与自然秘境的区别</h3>
+          <p>
+            城市隐藏空间和自然秘境入口在体验节奏上差别明显。前者通常交通方便、时间灵活，但空间较小，适合 40 分钟到 2 小时的短时停留；后者需要预留往返路程，受天气影响大，但空间开阔，适合半日以上的安排。
+          </p>
+          <ul>
+            <li><strong>城市隐藏空间：</strong>入口多位于建筑侧面、后巷或楼道，需留意消防通道与居民动线，避免打扰。</li>
+            <li><strong>自然秘境入口：</strong>常见于旧泵站、闸口、山道侧梯，出发前应确认手机信号与返程时间。</li>
+            <li><strong>地下文化场所：</strong>以唱片店暗门、小型演出空间为主，注意开放时段与限流规则。</li>
+            <li><strong>私密体验小店：</strong>强调安静与低干扰，适合阅读、写作或短时独处，部分需要口令进入。</li>
+          </ul>
+
+          <h3>如何判断一个入口是否适合自己</h3>
+          <p>
+            如果你更在意“找到”的过程，可以优先看城市隐藏类和口令类入口；如果你希望空间本身足够开阔、能待上半天，自然秘境和旧厂房顶层会更合适。对于第一次尝试私密探索的读者，建议从交通方便、规则清晰的入口开始，再逐步过渡到需要徒步或预约的类型。
+          </p>
+          <p>
+            另一个容易被忽略的判断标准是“退出成本”。有些入口进去容易，但出口需要绕行，或者天黑后原路返回不便。我们在条目中会尽量标注返程路线和替代出口，帮助你在出发前把<strong class="kw">秘密入口</strong>的进出节奏想清楚。
+          </p>
+          <p>
+            最后，入口对比时不要只看热度。热度高的地方可能因为限流而难约，反而影响体验。把开放时段、预约难度和停留时长放在一起看，比单纯比较人气更实用。这也是我们在相关推荐中按场景拆分标签的原因：先确定你的使用场景，再去找对应的入口类型。
+          </p>
+        </div>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="sec" id="guide" aria-labelledby="guide-title">
+        <div class="sec-head">
+          <h2 class="sec-title" id="guide-title">体验指南 · 从浏览到出发的四个步骤</h2>
+        </div>
+        <div class="guide-steps">
+          <div class="guide-step">
+            <span class="step-num">1</span>
+            <div class="step-body">
+              <h4>先按场景缩小范围</h4>
+              <p>用左栏的场景标签或分类入口，把范围缩小到“周末独行”“雨天室内”或“夜间可去”。场景比类型更容易匹配你的实际时间。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <span class="step-num">2</span>
+            <div class="step-body">
+              <h4>核对进入规则与开放时段</h4>
+              <p>每个条目会标注是否需要预约、口令或登记。出发前确认当日是否开放，尤其是依赖物业或管理员放行的入口。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <span class="step-num">3</span>
+            <div class="step-body">
+              <h4>评估路程与返程方式</h4>
+              <p>自然类入口要预留步行和返程时间，城市类入口注意末班车与夜间照明。把退出路线一起看好，再决定停留多久。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <span class="step-num">4</span>
+            <div class="step-body">
+              <h4>用相关推荐做二次比较</h4>
+              <p>如果两个入口难以取舍，对照开放时段、预约难度和安静程度三项，通常能快速排出优先级。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="sec" id="faq" aria-labelledby="faq-title">
+        <div class="sec-head">
+          <h2 class="sec-title" id="faq-title">常见问答 · 关于秘密入口的典型问题</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>秘密入口这类空间一般适合什么人去？</summary>
+            <p class="faq-answer">适合喜欢自己找路、对空间氛围敏感、不追求标准化服务的人。如果你更习惯明确招牌和即时接待，可能会觉得部分入口的进入流程偏长。</p>
+          </details>
+          <details class="faq-item">
+            <summary>隐藏空间的入口信息一般多久更新一次？</summary>
+            <p class="faq-answer">开放规则变化较快，我们尽量保持每周更新一次；涉及预约方式或口令调整的条目，会在最新动态中单独标注。</p>
+          </details>
+          <details class="faq-item">
+            <summary>第一次尝试私密探索，选城市隐藏还是自然秘境更合适？</summary>
+            <p class="faq-answer">建议从城市隐藏类开始，交通方便、时间灵活，进入门槛相对低。等对找入口的节奏熟悉后，再考虑需要徒步或提前预约的自然秘境。</p>
+          </details>
+          <details class="faq-item">
+            <summary>需要口令的入口安全吗，怎么确认信息可靠？</summary>
+            <p class="faq-answer">口令类入口多由场地管理方设置，进入前应确认开放时段和紧急出口。我们会在条目中注明信息来源与更新日期，但现场情况仍以管理方说明为准。</p>
+          </details>
+          <details class="faq-item">
+            <summary>雨天还能去哪些秘密入口？</summary>
+            <p class="faq-answer">可以优先看左栏“雨天室内”标签下的条目，比如居民楼天台的公共花房、地下唱片店和旧书店后巷的小厅，这些空间受天气影响较小。</p>
+          </details>
+          <details class="faq-item">
+            <summary>秘密入口和普通探店推荐有什么区别？</summary>
+            <p class="faq-answer">普通探店更关注产品和价格，秘密入口更关注进入方式、空间氛围和停留质量。我们给出的信息更偏向“怎么找、怎么进、适合待多久”。</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="sec" id="comments" aria-labelledby="comments-title">
+        <div class="sec-head">
+          <h2 class="sec-title" id="comments-title">用户评论 · 来自探索者的真实反馈</h2>
+          <span class="sec-sub">示例评论</span>
+        </div>
+        <div class="comment-grid">
+          <div class="comment-card">
+            <div class="comment-head">
+              <div class="comment-user"><span class="avatar">林</span><span class="comment-name">林间慢行</span></div>
+              <span class="comment-time">11-28</span>
+            </div>
+            <p class="comment-text">旧书店那个旋转门确实不好找，但进去之后很安静，适合带本书坐一下午。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <div class="comment-user"><span class="avatar">陈</span><span class="comment-name">陈小满</span></div>
+              <span class="comment-time">11-27</span>
+            </div>
+            <p class="comment-text">泵站侧梯的路线写得比较清楚，无信号那段提前说了，这点很实用。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <div class="comment-user"><span class="avatar">周</span><span class="comment-name">周末不加班</span></div>
+              <span class="comment-time">11-27</span>
+            </div>
+            <p class="comment-text">唱片店暗门通道限流 20 人，去之前最好确认当晚有没有演出，免得白跑。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <div class="comment-user"><span class="avatar">吴</span><span class="comment-name">吴一页</span></div>
+              <span class="comment-time">11-26</span>
+            </div>
+            <p class="comment-text">老码头仓库阁楼的光线下午确实更好，上午去稍微有点暗。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <div class="comment-user"><span class="avatar">许</span><span class="comment-name">许多多</span></div>
+              <span class="comment-time">11-25</span>
+            </div>
+            <p class="comment-text">花房登记流程比想象中简单，门口保安会指路，周末上午人少。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <div class="comment-user"><span class="avatar">赵</span><span class="comment-name">赵小北</span></div>
+              <span class="comment-time">11-24</span>
+            </div>
+            <p class="comment-text">河堤台阶傍晚去刚好，但雨后确实滑，建议穿抓地好一点的鞋。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <div class="comment-user"><span class="avatar">钱</span><span class="comment-name">钱慢一点</span></div>
+              <span class="comment-time">11-23</span>
+            </div>
+            <p class="comment-text">分类入口按场景分挺方便，我直接看“适合独行”那一栏就够了。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <div class="comment-user"><span class="avatar">孙</span><span class="comment-name">孙不二</span></div>
+              <span class="comment-time">11-22</span>
+            </div>
+            <p class="comment-text">有些入口需要口令，页面标注了更新日期，这点比只写个名字强。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <div class="comment-user"><span class="avatar">李</span><span class="comment-name">李子树下</span></div>
+              <span class="comment-time">11-21</span>
+            </div>
+            <p class="comment-text">希望多收录一些不用预约的免费空间，临时起意的时候更方便。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <div class="comment-user"><span class="avatar">王</span><span class="comment-name">王走走</span></div>
+              <span class="comment-time">11-20</span>
+            </div>
+            <p class="comment-text">深度解析里讲退出成本那段很实在，之前确实遇到过进去容易出来绕远的情况。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <div class="comment-user"><span class="avatar">郑</span><span class="comment-name">郑在途</span></div>
+              <span class="comment-time">11-19</span>
+            </div>
+            <p class="comment-text">对比了几类入口之后选了城市隐藏类，第一次尝试，体验不错。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <div class="comment-user"><span class="avatar">何</span><span class="comment-name">何小禾</span></div>
+              <span class="comment-time">11-18</span>
+            </div>
+            <p class="comment-text">整体信息密度可以，部分条目如果加上附近交通会更好。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="sec" id="news" aria-labelledby="news-title">
+        <div class="sec-head">
+          <h2 class="sec-title" id="news-title">相关资讯 · 隐秘空间与私密探索动态</h2>
+        </div>
+        <ul class="news-list">
+          <li class="news-item">
+            <span class="news-date">11-28</span>
+            <div class="news-body">
+              <h3 class="news-title">旧城区侧巷空间改造计划公布，多处隐藏入口将保留原结构</h3>
+              <p class="news-summary">改造方案提到保留后巷旋转门与消防梯动线，对喜欢城市隐藏空间的探索者是好消息。</p>
+            </div>
+          </li>
+          <li class="news-item">
+            <span class="news-date">11-26</span>
+            <div class="news-body">
+              <h3 class="news-title">山道检修步道分段开放，泵站侧梯路线同步更新</h3>
+              <p class="news-summary">新开放的步道缩短了步行距离，但部分路段仍无信号，出发前建议下载离线地图。</p>
+            </div>
+          </li>
+          <li class="news-item">
+            <span class="news-date">11-24</span>
+            <div class="news-body">
+              <h3 class="news-title">地下演出空间试行预约制，限流规则延续至年底</h3>
+              <p class="news-summary">唱片店暗门通道改为全预约入场，现场不再保留候补名额，计划前往需提前登记。</p>
+            </div>
+          </li>
+          <li class="news-item">
+            <span class="news-date">11-21</span>
+            <div class="news-body">
+              <h3 class="news-title">老码头仓库开放日增加，阁楼入口口令每周更新</h3>
+              <p class="news-summary">管理方将开放日从两天增加到三天，口令改为每周一更新，需在入口处核对。</p>
+            </div>
+          </li>
+          <li class="news-item">
+            <span class="news-date">11-18</span>
+            <div class="news-body">
+              <h3 class="news-title">社区花房进入冬季维护期，开放时段缩短</h3>
+              <p class="news-summary">天台花房调整为上午十点至下午四点开放，登记流程不变，建议避开午间高峰。</p>
+            </div>
+          </li>
+          <li class="news-item">
+            <span class="news-date">11-15</span>
+            <div class="news-body">
+              <h3 class="news-title">河堤闸口增设夜间照明，检修台阶傍晚可停留时间延长</h3>
+              <p class="news-summary">照明覆盖下行台阶与碎石滩主要区域，但仍建议天黑前返回堤顶。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="sec" id="rec" aria-labelledby="rec-title">
+        <div class="sec-head">
+          <h2 class="sec-title" id="rec-title">相关推荐 · 按具体方向继续探索</h2>
+        </div>
+        <div class="rec-tags">
+          <span class="rec-tag">城市隐藏空间 <span class="rec-arrow">→</span></span>
+          <span class="rec-tag">自然秘境入口 <span class="rec-arrow">→</span></span>
+          <span class="rec-tag">需要口令的私密入口 <span class="rec-arrow">→</span></span>
+          <span class="rec-tag">雨天可去的隐秘地点 <span class="rec-arrow">→</span></span>
+          <span class="rec-tag">适合独行的安静空间 <span class="rec-arrow">→</span></span>
+          <span class="rec-tag">免费小众入口 <span class="rec-arrow">→</span></span>
+          <span class="rec-tag">地下文化场所对比 <span class="rec-arrow">→</span></span>
+          <span class="rec-tag">预约制入口体验记录 <span class="rec-arrow">→</span></span>
+        </div>
+      </section>
+
+      <!-- 11. 精选时间线 -->
+      <section class="sec" id="timeline" aria-labelledby="timeline-title">
+        <div class="sec-head">
+          <h2 class="sec-title" id="timeline-title">探索时间线 · 本季度精选入口收录记录</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2024-11</div>
+            <h3 class="timeline-title">城市隐藏专题扩展</h3>
+            <p class="timeline-desc">新增旧书店旋转门、居民楼花房等 6 条城市隐藏空间，补充预约与登记说明。</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024-10</div>
+            <h3 class="timeline-title">自然秘境路线修订</h3>
+            <p class="timeline-desc">更新泵站侧梯与河堤闸口的返程路线，标注无信号路段和雨季替代路径。</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024-09</div>
+            <h3 class="timeline-title">地下文化场所联合整理</h3>
+            <p class="timeline-desc">集中梳理地下唱片店、小型演出空间的开放时段与限流规则，形成对照说明。</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024-08</div>
+            <h3 class="timeline-title">私密体验分类上线</h3>
+            <p class="timeline-desc">按安静程度、停留时长和进入方式拆分私密体验类入口，方便按场景筛选。</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ---------- 右栏 ---------- -->
+    <aside class="col-right" aria-label="辅助阅读">
+      <div class="side-block">
+        <h2 class="side-title">页内目录</h2>
+        <ul class="toc-list">
+          <li><a href="/#intro">入口简介</a></li>
+          <li><a href="/#hot">热门内容推荐</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#cats">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rec">相关推荐</a></li>
+          <li><a href="/#timeline">探索时间线</a></li>
+        </ul>
+      </div>
+
+      <div class="side-block">
+        <h2 class="side-title">热门条目</h2>
+        <ul class="hot-list">
+          <li><span class="hot-rank">01</span><span class="hot-name">旧书店后巷的旋转门</span></li>
+          <li><span class="hot-rank">02</span><span class="hot-name">山腰废弃泵站的侧梯</span></li>
+          <li><span class="hot-rank">03</span><span class="hot-name">地下唱片店的暗门通道</span></li>
+          <li><span class="hot-rank">04</span><span class="hot-name">老码头仓库的阁楼入口</span></li>
+          <li><span class="hot-rank">05</span><span class="hot-name">居民楼天台的公共花房</span></li>
+          <li><span class="hot-rank">06</span><span class="hot-name">河堤旧闸口的检修台阶</span></li>
+        </ul>
+      </div>
+
+      <div class="side-block">
+        <h2 class="side-title">延伸阅读</h2>
+        <ul class="extend-list">
+          <li><span class="ext-dot"></span>入口对比：城市隐藏与自然秘境</li>
+          <li><span class="ext-dot"></span>预约制入口的进入流程说明</li>
+          <li><span class="ext-dot"></span>如何在夜间安全选择入口</li>
+          <li><span class="ext-dot"></span>私密探索的退出路线规划</li>
+          <li><span class="ext-dot"></span>免费小众空间的常见限制</li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- ===== 页尾 ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><span class="f-mark">秘</span>秘密入口</div>
+          <p class="footer-desc">
+            收集城市与自然中不轻易被发现的隐秘空间、私密体验与小众入口，按场景和进入方式整理，帮助喜欢探索的读者少走弯路。
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>内容频道</h4>
+          <a href="/#intro">入口简介</a>
+          <a href="/#hot">热门推荐</a>
+          <a href="/#updates">最新更新</a>
+          <a href="/#cats">分类入口</a>
+        </div>
+        <div class="footer-col">
+          <h4>阅读辅助</h4>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#comments">用户评论</a>
+        </div>
+        <div class="footer-col">
+          <h4>更多方向</h4>
+          <a href="/#news">相关资讯</a>
+          <a href="/#rec">相关推荐</a>
+          <a href="/#timeline">探索时间线</a>
+          <a href="/#top">返回顶部</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 秘密入口 · 内容示例站点</span>
+        <span class="demo-note">部分内容为示例数据，仅用于展示页面结构</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      // 分类项键盘可操作
+      var catItems = document.querySelectorAll('.cat-item[role="link"]');
+      catItems.forEach(function (el) {
+        el.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            el.click();
+          }
+        });
+      });
+
+      // 相关推荐标签键盘可操作（仅演示，无真实跳转）
+      var recTags = document.querySelectorAll('.rec-tag');
+      recTags.forEach(function (el) {
+        el.setAttribute('tabindex', '0');
+        el.setAttribute('role', 'button');
+        el.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            el.click();
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+  </html>
